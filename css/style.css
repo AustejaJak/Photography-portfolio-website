@@ -1,0 +1,22 @@
+body{
+  background-color: #f5f2ed;
+  color: #231f21;
+  font-family: Arial;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.pagetitle{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  letter-spacing: 100px;
+}
