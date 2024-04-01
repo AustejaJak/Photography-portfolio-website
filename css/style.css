@@ -18,5 +18,24 @@ body{
   display: flex;
   justify-content: center;
   font-size: 60px;
-  letter-spacing: 100px;
+  letter-spacing: 110px;
 }
+.galleryphotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galleryphotos div {
+  flex-basis: 45%;
+  margin: 20px;
+}
+
+.galleryphotos img {
+  max-width: 100%;
+  height: auto;
+  width: 100vw;
+  max-height: 90vh;
+  object-fit: cover;
+}
+
