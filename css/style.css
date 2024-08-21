@@ -1,12 +1,47 @@
+@import url('panchang.css');
+@import url('cabinet-grotesk.css');
+
 body{
   background-color: #f5f2ed;
   color: #231f21;
   font-family: Arial;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  all: unset; /* Resets all properties */
+  display: inline; /* Restores default display property */
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Removes underline */
+  cursor: pointer; /* Ensures it still looks like a link */
+}
+
+h1{
+  font-family: CabinetGrotesk-Extrabold;
 }
 
 .navbar{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  gap: 400px;
+  animation: fadeInDown;
+  animation-duration: 1s;
+}
+
+.name{
+  margin-left: -120px;
+}
+
+.navigation, .contact{
+  font-family: CabinetGrotesk-Extrabold;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-content{
@@ -14,12 +49,28 @@ body{
   flex-direction: column;
 }
 
+h1.gallery{
+  font-family: Panchang-bold;
+  pointer-events: none;
+}
+
 .pagetitle{
   display: flex;
   justify-content: center;
   font-size: 60px;
-  letter-spacing: 110px;
+  letter-spacing: 112px;
+  margin-left: 80px;
+  pointer-events: none;
+  animation: fadeIn;
+  animation-duration: 1.5s;
+
 }
+
+.gallery::selection, h1::selection{
+  background-color: #231f21;
+  color: #f5f2ed;
+}
+
 .galleryphotos {
   display: flex;
   flex-wrap: wrap;
@@ -34,8 +85,63 @@ body{
 .galleryphotos img {
   max-width: 100%;
   height: auto;
-  width: 100vw;
+  width: 100%;
   max-height: 90vh;
   object-fit: cover;
+  border-radius: 15px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  cursor: pointer;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
+
+.galleryphotos img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.cursor__circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+
+.cursor__circle svg circle {
+  fill: white;
+}
+
+.marker {
+  position: relative;
+  margin: 0 16px;
+  color: #333;
+  text-decoration: none;
+  line-height: 1em;
+  & svg {
+    position: absolute;
+    left: 0;
+    top: -50%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+  }
+  & path {
+    transition: stroke-dashoffset 300ms linear;
+    stroke-width: 1.0;
+    stroke: #231f21;
+    fill: none;
+    stroke-linecap: round;
+  }
+  &:hover path{
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
 
