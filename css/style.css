@@ -44,63 +44,6 @@ h1{
   align-items: center;
 }
 
-.dropdown-content{
-  display: flex;
-  flex-direction: column;
-}
-
-h1.gallery{
-  font-family: Panchang-bold;
-  pointer-events: none;
-}
-
-.pagetitle{
-  display: flex;
-  justify-content: center;
-  font-size: 60px;
-  letter-spacing: 112px;
-  margin-left: 80px;
-  pointer-events: none;
-  animation: fadeIn;
-  animation-duration: 1.5s;
-
-}
-
-.gallery::selection, h1::selection{
-  background-color: #231f21;
-  color: #f5f2ed;
-}
-
-.galleryphotos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.galleryphotos div {
-  flex-basis: 45%;
-  margin: 20px;
-  overflow: hidden;
-  border-radius: 15px;
-  position: relative;
-}
-
-.galleryphotos img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-height: 90vh;
-  object-fit: cover;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-  transform-origin: center center;
-}
-
-.galleryphotos div:hover img {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 .cursor__circle {
   position: fixed;
   top: 0;

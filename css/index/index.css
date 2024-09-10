@@ -1,0 +1,16 @@
+h1.gallery{
+  font-family: Panchang-bold;
+  pointer-events: none;
+}
+
+.pagetitle{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  letter-spacing: 112px;
+  margin-left: 80px;
+  pointer-events: none;
+  animation: fadeIn;
+  animation-duration: 1.5s;
+
+}
