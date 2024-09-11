@@ -13,28 +13,66 @@ body{
 }
 
 a {
-  all: unset; /* Resets all properties */
-  display: inline; /* Restores default display property */
-  color: inherit; /* Inherit color from parent */
-  text-decoration: none; /* Removes underline */
-  cursor: pointer; /* Ensures it still looks like a link */
+  all: unset;
+  display: inline;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h1{
   font-family: CabinetGrotesk-Extrabold;
 }
 
+.name{
+  margin-left: -120px;
+}
+
 .navbar{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 400px;
+  padding: 0 40px;
+  width: 100%;
   animation: fadeInDown;
   animation-duration: 1s;
 }
 
-.name{
-  margin-left: -120px;
+.dropdown-content{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.galleryphotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galleryphotos div {
+  flex-basis: 45%;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+
+.galleryphotos img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.galleryphotos div:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .navigation, .contact{
