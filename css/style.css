@@ -32,10 +32,16 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 100px;
   width: 100%;
   animation: fadeInDown;
   animation-duration: 1s;
+}
+
+@media only screen and (max-width: 1620px) {
+  .navbar{
+    padding: 0 4vw;
+  }
 }
 
 .dropdown-content{

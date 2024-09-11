@@ -13,3 +13,11 @@ h1.gallery{
   animation: fadeIn;
   animation-duration: 1.5s;
 }
+
+@media only screen and (max-width: 1920px) {
+  .pagetitle{
+    font-size: 3vw;
+    letter-spacing: 6vw;
+    margin-left: 5vw;
+  }
+}

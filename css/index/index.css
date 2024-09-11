@@ -7,10 +7,18 @@ h1.gallery{
   display: flex;
   justify-content: center;
   font-size: 60px;
-  letter-spacing: 65px;
+  letter-spacing: 112px;
   margin-left: 80px;
   pointer-events: none;
   animation: fadeIn;
   animation-duration: 1.5s;
 
+}
+
+@media only screen and (max-width: 1920px) {
+  .pagetitle{
+    font-size: 3vw;
+    letter-spacing: 6vw;
+    margin-left: 5vw;
+  }
 }
