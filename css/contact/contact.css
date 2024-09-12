@@ -21,3 +21,10 @@ h1.gallery{
     margin-left: 5vw;
   }
 }
+
+.contactContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

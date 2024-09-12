@@ -45,6 +45,11 @@ h1{
   }
 }
 
+.gallery::selection, .name::selection, .marker::selection, p::selection{
+  color: #f5f2ed;
+  background: #231f21;
+}
+
 .dropdown-content{
   display: flex;
   flex-direction: column;
@@ -55,6 +60,8 @@ h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  animation: fadeIn;
+  animation-duration: 1s;
 }
 
 .galleryphotos div {
@@ -75,6 +82,12 @@ h1{
   border-radius: 15px;
   transition: transform 0.3s ease;
   transform-origin: center center;
+}
+
+@media only screen and (max-width: 815px) {
+  .galleryphotos div{
+    flex-basis: 40%;
+  }
 }
 
 .galleryphotos div:hover img {
