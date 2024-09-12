@@ -6,6 +6,14 @@ body{
   color: #231f21;
   font-family: Arial;
   overflow-x: hidden;
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat;
+  animation: background-animation 200s linear infinite;
+  background-position: left;
+}
+
+@keyframes background-animation {
+  100% {background-position: right;}
 }
 
 *, *::before, *::after {

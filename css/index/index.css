@@ -6,13 +6,13 @@ h1.gallery{
 .pagetitle{
   display: flex;
   justify-content: center;
-  font-size: 60px;
+  font-size: 4vw;
   letter-spacing: 112px;
   margin-left: 80px;
   pointer-events: none;
   animation: fadeIn;
   animation-duration: 1.5s;
-
+  text-shadow: #eadaad 2px 5px;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -22,3 +22,4 @@ h1.gallery{
     margin-left: 5vw;
   }
 }
+
